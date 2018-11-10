@@ -19,12 +19,14 @@ const Layout = ({ data }) => {
           const { frontmatter } = edge.node;
           return (
             <div key={frontmatter.path} style={{ marginBottom: '1rem' }}>
-              <Link to={frontmatter.path}>
-                {frontmatter.title}
-              </Link>
+              <Link to={frontmatter.path}>{frontmatter.title}</Link>
             </div>
           );
         })}
+
+        <div>
+          <Link to="/tags">Browse by Tag</Link>
+        </div>
       </div>
     </div>
   );
