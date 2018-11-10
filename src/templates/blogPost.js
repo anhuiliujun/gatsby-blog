@@ -19,6 +19,11 @@ const Template = ({ data, pageContext }) => {
       />
 
       <div style={{ marginBottom: '1rem', fontFamily: 'avenir' }}>
+        <Link to={'/'}>
+          HomePage
+        </Link>
+      </div>
+      <div style={{ marginBottom: '1rem', fontFamily: 'avenir' }}>
         {next && (
           <Link to={next.frontmatter.path}>
             Next: {`${next.frontmatter.title}`}
